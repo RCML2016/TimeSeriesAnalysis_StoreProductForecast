@@ -15,7 +15,7 @@ variables:
   webAppName: 'StoreProductForecast'
   
   # Environment name
-  environmentName: 'TEST'
+  environmentName: 'Test'
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
