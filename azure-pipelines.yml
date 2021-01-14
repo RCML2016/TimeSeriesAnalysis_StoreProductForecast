@@ -16,6 +16,13 @@ variables:
   
   # Environment name
   environmentName: 'TEST'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1 (47f41c01-c6f5-449b-bb60-b9d30c626396)'
+    appType: 'webApp'
+    WebAppName: 
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
